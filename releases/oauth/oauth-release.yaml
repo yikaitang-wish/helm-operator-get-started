@@ -1,0 +1,21 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: oauth-dev
+  namespace: wish-micro
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:*
+spec:
+  releaseName: oauth-dev
+  chart:
+    git: git@github.com:yikaitang/helm-operator-get-started
+    path: charts/oauth
+    ref: master
+  values:
+    image:
+      repository: 030836370731.dkr.ecr.cn-north-1.amazonaws.com.cn/micro_fe/oauth/dev-yikai
+      tag: 55b64b1-200730201005
+    replicaCount: 1
+
