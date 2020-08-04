@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: oauth-dev
   chart:
-    git: git@github.com:yikaitang/helm-operator-get-started
+    git: git@github.com:yikaitang-wish/helm-operator-get-started
     path: charts/oauth
     ref: master
   values:
