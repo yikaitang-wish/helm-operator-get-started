@@ -6,7 +6,7 @@ metadata:
   namespace: wish-micro
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:*
+    filter.fluxcd.io/chart-image: glob:55b64b1-*
 spec:
   releaseName: oauth-dev
   chart:
