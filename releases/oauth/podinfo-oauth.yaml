@@ -15,6 +15,6 @@ spec:
   values:
     image:
       repository: 030836370731.dkr.ecr.cn-north-1.amazonaws.com.cn/micro_fe/oauth/dev-yikai
-      tag: 55b64b1-fake
+      tag: 55b64b1
     replicaCount: 1
 
