@@ -6,7 +6,6 @@ metadata:
   namespace: wish-micro
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: glob:*fake*
 spec:
   releaseName: oauth-dev
   chart:
