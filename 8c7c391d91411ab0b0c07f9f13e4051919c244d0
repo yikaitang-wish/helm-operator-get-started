@@ -1,0 +1,1 @@
+{"jobID":"745d24e1-793d-97f6-fdc2-e829717a6a28","spec":{"type":"policy","cause":{"Message":"","User":"Yikai Tang \u003cyikaitang@wish.com\u003e"},"spec":{"wish-micro:helmrelease/oauth-dev":{"add":{"tag_all":"glob:*"},"remove":{}}}},"result":null}
