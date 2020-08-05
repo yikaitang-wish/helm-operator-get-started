@@ -3,7 +3,9 @@ kind: Deployment
 metadata:
   name: {{ include "mychart.fullname" . }}
   labels:
+    fluxcd.io/automated: "true"
     {{- include "mychart.labels" . | nindent 4 }}
+spec:
 spec:
 {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
